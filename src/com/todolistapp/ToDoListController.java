@@ -57,6 +57,7 @@ public class ToDoListController {
         Parent root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("ToDoList.fxml")));
         Scene scene = new Scene(root);
         stage.setScene(scene);
+
         stage.setTitle("ToDo List App");
         stage.show();
     }
