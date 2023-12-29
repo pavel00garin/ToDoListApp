@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox fx:controller="com.todolistapp.ToDoListController" spacing="10" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1">
+    <TextField fx:id="taskInput" promptText="Enter a task" />
+    <Button text="Add Task" onAction="#addTask"/>
+    <Button text="Remove Task" onAction="#removeTask" />
+    <Button text="Mark as Completed" onAction="#markAsCompleted" />
+    <ListView fx:id="taskList" />
+
+</VBox>
