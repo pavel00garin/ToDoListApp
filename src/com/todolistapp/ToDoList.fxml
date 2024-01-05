@@ -6,14 +6,14 @@
 <?import javafx.scene.layout.VBox?>
 
 
-<VBox fx:controller="com.todolistapp.ToDoListController" spacing="10" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1">
-    <TextField fx:id="taskInput" promptText="Enter a task" />
-    <Button text="Add Task" onAction="#addTask"/>
-    <Button text="Save Tasks" onAction="#saveTasks"/>
-    <Button text="Load Tasks" onAction="#loadTasks"/>
-    <Button text="Remove Task" onAction="#removeTask" />
-    <Button text="Mark as Completed" onAction="#markAsCompleted" />
-    <ListView fx:id="taskList" prefHeight="400.0" prefWidth="500.0" />
+<VBox fx:controller="com.todolistapp.ToDoListController" spacing="10" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" style="-fx-background-color: #f0f0f0;">
+    <TextField fx:id="taskInput" promptText="Enter a task" style="-fx-font-size: 14; -fx-padding: 5; -fx-background-color: #ffffff;"/>
 
+    <Button text="Add Task" onAction="#addTask" style="-fx-font-size: 14; -fx-background-color: #4CAF50; -fx-text-fill: #ffffff;"/>
+    <Button text="Save Tasks" onAction="#saveTasks" style="-fx-font-size: 14; -fx-background-color: #2196F3; -fx-text-fill: #ffffff;"/>
+    <Button text="Load Tasks" onAction="#loadTasks" style="-fx-font-size: 14; -fx-background-color: #FF9800; -fx-text-fill: #ffffff;"/>
+    <Button text="Remove Task" onAction="#removeTask" style="-fx-font-size: 14; -fx-background-color: #f44336; -fx-text-fill: #ffffff;" />
+    <Button text="Mark as Completed" onAction="#markAsCompleted" style="-fx-font-size: 14; -fx-background-color: #9C27B0; -fx-text-fill: #ffffff;" />
 
+    <ListView fx:id="taskList" prefHeight="400.0" prefWidth="500.0" style="-fx-font-size: 14; -fx-background-color: #ffffff; -fx-control-inner-background: #ffffff;"/>
 </VBox>
